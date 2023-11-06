@@ -40,6 +40,10 @@
     />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!---------- Header----------->
@@ -58,23 +62,175 @@
         </div>
       </div>
     </div>
+    <!--------- Haeder-------- -->
     <header>
       <div class="header-flexbox container">
-        <img src="./assets/limitless_1080px_3d.jpg" alt="" />
+        <a href="./index.html">
+          <img src="./assets/limitless_1080px_3d.jpg" alt=""
+        /></a>
+
         <nav>
           <span>
-            <a href="" class="selected-header-page">Home</a>
+            <a href="./index.html" class="selected-header-page">Home</a>
           </span>
           <span><a href="">Course Offerings</a></span>
-          <span><a href="">About Us</a></span>
-          <span> <a href=""> Blog</a> </span
+          <span class="header-nav-link"
+            ><a>About Us <i class="far fa-chevron-down"></i></a>
+            <div class="header-nav-dropdown">
+              <ul>
+                <li><a href="">Limitless Agility</a></li>
+                <li><a href="">Trainers</a></li>
+                <li><a href="">Testimonials</a></li>
+              </ul>
+            </div></span
+          >
+          <span> <a href="./pages/blog.html"> Blog</a> </span
+          ><span>
+            <a href=""> Contact</a>
+          </span>
+        </nav>
+        <button class="mobile-nav-btn">Menu</button>
+      </div>
+    </header>
+    <!-- ------Mobile Header Slider------ -->
+    <div class="mobile-nav-slider">
+      <div class="mobile-nav-slider-top">
+        <a href="./index.html">
+          <img src="./assets/limitless_1080px_3d.jpg" alt=""
+        /></a>
+
+        <div class="slider-close-btn"><i class="far fa-times-circle"></i></div>
+      </div>
+      <div class="mobile-nav-menu">
+        <nav>
+          <span>
+            <a href="./index.html" class="selected-header-page">Home</a>
+          </span>
+          <span><a href="">Course Offerings</a></span>
+          <span class="mobile-nav-link"
+            ><a
+              >About Us
+
+              <span class="mobile-nav-link-i"><i class="far fa-plus"></i></span>
+            </a>
+            <div class="mobile-nav-dropdown">
+              <ul>
+                <li><a href="">Limitless Agility</a></li>
+                <li><a href="">Trainers</a></li>
+                <li><a href="">Testimonials</a></li>
+              </ul>
+            </div></span
+          >
+          <span> <a href="./pages/blog.html"> Blog</a> </span
           ><span>
             <a href=""> Contact</a>
           </span>
         </nav>
       </div>
-    </header>
+    </div>
     <main>
+      <!------------ Hero Slider Section-------------->
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide-1">
+            <img src="./assets/slider-21.jpg" class="slide-img" />
+            <img src="./assets/layer-31.png" class="slider-bubble" alt="" />
+            <img
+              src="./assets/slide-1-person.png"
+              class="slide-person"
+              alt=""
+            />
+            <div class="swiper-slide-content-container">
+              <div class="swiper-slide-content container">
+                <span>Ready to Learn?</span>
+                <h1>Discover your infinite potential</h1>
+                <p>
+                  We can teach you how to keep up with the
+                  <br />
+                  ever changing world of work
+                </p>
+                <div>
+                  <span class="slider-certified-span"
+                    >Certified ScrumMaster®
+                  </span>
+                  <img src="./assets/badge_withLine_.png" alt="" />
+                  <button class="slider-enroll-btn">
+                    <a href="">Enroll Now</a>
+                  </button>
+                  <img src="./assets/Tittle_Scrum.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-2">
+            <img src="./assets/layer-31.png" class="slider-bubble" alt="" />
+            <img src="./assets/layer-21.png" class="slider-bubble-2" alt="" />
+            <img
+              src="./assets/slide-2-person.png"
+              class="slide-person"
+              alt=""
+            />
+            <div class="swiper-slide-content-container">
+              <div class="swiper-slide-content container">
+                <span>Ready to Learn?</span>
+                <h1>Discover your infinite potential</h1>
+                <p>
+                  We can teach you how to keep up with the
+                  <br />
+                  ever changing world of work
+                </p>
+                <div>
+                  <span class="slider-certified-span"
+                    >Certified ScrumMaster®
+                  </span>
+                  <img src="./assets/badge_withLine_.png" alt="" />
+                  <button class="slider-enroll-btn">
+                    <a href="">Enroll Now</a>
+                  </button>
+                  <img src="./assets/Tittle_Scrum_black.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-3">
+            <div class="swiper-slide-content-container">
+              <div class="swiper-slide-3-content container">
+                <img
+                  src="./assets/globe_trans_1.png"
+                  class="slide-globe"
+                  alt=""
+                />
+                <h1>
+                  <span>Now Offering Live Online</span>
+                  <span>CSM<b>® </b> Courses</span>
+                </h1>
+                <div>
+                  <div>
+                    <img src="./assets/badge_withLine_.png" alt="" />
+                    <img
+                      src="./assets/zz-scrum_approved_1-1.png"
+                      class="course-approval-img"
+                      alt=""
+                    />
+                  </div>
+                  <span class="slider-certified-span"
+                    >Certified ScrumMaster®
+                  </span>
+                  <button class="slider-enroll-btn">
+                    <a href="">Enroll Now</a>
+                  </button>
+
+                  <img src="./assets/Tittle_Scrum.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
       <!------- Counter Section --------->
       <section class="counter-section">
         <div class="counter-section-flexbox container">
@@ -152,7 +308,7 @@
           </div>
           <div class="about-section-flexbox-right">
             <span>About Limitless Agility</span>
-            <h2>Welcome to the Learning Cente</h2>
+            <h2>Welcome to the Learning Center</h2>
             <p>
               Limitless Agility is a company solely focused on, and extremely
               passionate about, teaching how to build great teams that generate
@@ -339,22 +495,94 @@
       <section class="blog-post-section">
         <span>Limitless Agility Blog</span>
         <h2>Blog Posts</h2>
-        <div class="blog-post-section-grid">
+        <div class="blog-post-section-grid container">
           <div class="blog-post-card">
-            <a href=""><img src="./assets/t-shaped-scaled.jpg" alt="" /></a>
-            <h3>
-              <a href=""> T-Shaped Skills: A self-assessment of a Scrum Team</a>
-            </h3>
-            <span>Read More</span>
-            <span>Raj Kasturi</span>
-            <span>November 25, 2018</span>
+            <div>
+              <a href=""><img src="./assets/t-shaped-scaled.jpg" alt="" /></a>
+            </div>
+
+            <div class="blog-post-content">
+              <h3>
+                <a href="">
+                  T-Shaped Skills: A self-assessment of a Scrum Team</a
+                >
+              </h3>
+              <span>
+                <a href=""> Read More</a>
+              </span>
+              <span>
+                <a href=""> Raj Kasturi</a>
+              </span>
+              <span> July 2, 2018 </span>
+            </div>
+          </div>
+          <div class="blog-post-card">
+            <div>
+              <a href=""><img src="./assets/listining-scaled.jpg" alt="" /></a>
+            </div>
+
+            <div class="blog-post-content">
+              <h3>
+                <a href="">
+                  Measuring the success of agile – Should we focus on the
+                  outcomes or outputs?</a
+                >
+              </h3>
+              <span>
+                <a href=""> Read More</a>
+              </span>
+              <span>
+                <a href=""> Raj Kasturi</a>
+              </span>
+              <span> July 2, 2018 </span>
+            </div>
+          </div>
+          <div class="blog-post-card">
+            <div>
+              <a href=""
+                ><img src="./assets/measuring-success-scaled.jpg" alt=""
+              /></a>
+            </div>
+
+            <div class="blog-post-content">
+              <h3>
+                <a href=""> The fine art of listening</a>
+              </h3>
+              <span>
+                <a href=""> Read More</a>
+              </span>
+              <span>
+                <a href=""> Raj Kasturi</a>
+              </span>
+              <span> July 2, 2018 </span>
+            </div>
+          </div>
+          <div class="blog-post-card">
+            <div>
+              <a href="">
+                <img src="./assets/scrum-tree-scaled.jpg" alt=""
+              /></a>
+            </div>
+
+            <div class="blog-post-content">
+              <h3>
+                <a href=""> Scrum “Tree”</a>
+              </h3>
+              <span>
+                <a href=""> Read More</a>
+              </span>
+              <span>
+                <a href=""> Raj Kasturi</a>
+              </span>
+              <span> July 2, 2018 </span>
+            </div>
           </div>
         </div>
         <button>Load More</button>
       </section>
       <!-- Certificates Section -->
-      <section class="certificates-section">
-        <div>
+      <section class="certificates-section container">
+        <div class="certificates-section-top">
           <img
             src="./assets/3c6f6a_b3394624aaef40838c84f34e40012eab_mv2.webp"
             alt=""
@@ -362,12 +590,18 @@
           <img src="./assets/CST.webp" alt="" />
           <img src="./assets/Scrum_Foundations_Educator (1).webp" alt="" />
         </div>
-        <span>Start learning from our experts and enhance your skills</span>
       </section>
+      <div class="certificates-section-bottom container">
+        <a href="./index.html">
+          <img src="./assets/limitless_1080px_3d.jpg" alt=""
+        /></a>
+
+        <span>Start learning from our experts and enhance your skills</span>
+      </div>
     </main>
 
     <footer>
-      <div class="footer-flexbox">
+      <div class="footer-flexbox container">
         <nav>
           <a href="">Home</a>
           <a href="">Limitless Agility</a>
@@ -376,31 +610,95 @@
           <a href="">Contact</a>
         </nav>
         <div>
-          <i class="fab fa-twitter"></i> <i class="fab fa-linkedin"></i>
+          <a href=""><i class="fab fa-twitter"></i> </a>
+          <a href=""> <i class="fab fa-linkedin"></i></a>
         </div>
       </div>
-      <div class="footer-copyright">
+      <div class="footer-copyright container">
         <span>© Copyright 2022 LimitlessAgility</span>
       </div>
     </footer>
+    <!----------------Live Chat Btn---------------->
+    <div class="live-chat-section">
+      <div class="live-chat-popup">
+        <div class="live-chat-btn"><i class="fas fa-comment-lines"></i></div>
+
+        <div class="live-chat-content">
+          <h3>
+            Please fill out the form below and we will get back to you as soon
+            as possible.
+          </h3>
+
+          <form action="">
+            <input type="text" name="" id="" placeholder="*Name" />
+            <input type="text" name="" id="" placeholder="*Email" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="4"
+              placeholder="*Message"
+            ></textarea>
+            <button><i class="fas fa-paper-plane"></i>Submit</button>
+          </form>
+
+          <p>
+            <a href="">
+              Add free
+              <b> live chat</b>
+              to your site</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
 
     <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="text/javascript">
       // Counter
       const counters = document.querySelectorAll(".counter");
+      const counter_section = document.querySelector(".counter-section");
 
-      counters.forEach((counter) => {
-        counter.innerText = "0";
-        const updateCounter = () => {
-          const target = +counter.getAttribute("data-target");
-          const count = +counter.innerText;
-          const increment = target / 200;
-          if (count < target) {
-            counter.innerText = `${Math.ceil(count + increment)}`;
-            setTimeout(updateCounter, 1);
-          } else counter.innerText = target;
-        };
-        updateCounter();
+      const options = {
+        root: null,
+        threshold: 0,
+        rootMargin: "10px",
+      };
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            counters.forEach((counter) => {
+              counter.innerText = "0";
+              const updateCounter = () => {
+                const target = +counter.getAttribute("data-target");
+                const count = +counter.innerText;
+                const increment = target / 200;
+                if (count < target) {
+                  counter.innerText = `${Math.ceil(count + increment)}`;
+                  setTimeout(updateCounter, 1);
+                } else counter.innerText = target;
+              };
+              updateCounter();
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      observer.observe(counter_section);
+      // Swiper Js
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
       });
     </script>
   </body>
